@@ -1,0 +1,27 @@
+$color2:aliceblue;
+.currency {
+    display: flex;
+    margin-bottom: 20px;
+  
+    label {
+      margin-right: 10px;
+    }
+  
+    select {
+      padding: 5px;
+      margin-right: 10px;
+    }
+  
+    input {
+      padding: 5px;
+      width: 100px;
+    }
+  }
+  
+ 
+  
+  .converter {
+    display: flex;
+    flex-direction: column;
+    background-color: $color2;
+    padding: 20px; }

@@ -1,0 +1,16 @@
+<div class="converter">
+    <div class="currency">
+      <label>Выберите валюту:</label>
+      <select [(ngModel)]="fromCurrency" (ngModelChange)="convert('fromValue')">
+        <option *ngFor="let currency of currencies" [value]="currency">{{ currency  }}</option>
+      </select>
+      <input type="number" [(ngModel)]="fromValue" (ngModelChange)="convert('fromValue')">
+    </div>
+    <div class="currency">
+      <label>Конвертированная валюта:</label>
+      <select [(ngModel)]="toCurrency" (ngModelChange)="convert('toValue')">
+        <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+      </select>
+      <input type="number" [(ngModel)]="toValue" (ngModelChange)="convert('toValue')">
+    </div>
+  </div>
